@@ -1,0 +1,369 @@
+/****************************************************************
+Reset CSS
+*****************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+/****************************************************************
+Google Fonts
+*****************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/****************************************************************
+Page Index
+*****************************************************************/
+.bodyPrincipal{
+    font-size: 1.5rem; 
+    background-color:#fafafa ;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main   main   main"
+    "main   main   main" 
+    "footer footer footer" 
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+.mainPrincipal {
+    
+    grid-area:main ;
+    
+}
+
+footer{
+    
+    grid-area: footer;
+}
+
+/****************************************************************
+HEADER
+*****************************************************************/
+.menu{
+    background-color: black;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 300px;
+    height: 80px;
+    
+}
+
+.menuLista ul li a:hover{
+    color: yellow;
+}
+
+/****************************************************************
+MAIN
+*****************************************************************/
+
+.slider img{
+    border: solid 2px rgb(209, 111, 14);
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.sectionVentas{
+    
+    display: flex;
+    gap: 40px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  
+    
+    
+    
+}
+.cajaTablas, .cajaTrajes, .cajaAccesorios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15,15,15, .5);
+    
+}
+.cajaTablas{
+    background-image: url(../img/tablas.jpg);
+}
+
+.cajaTrajes{ 
+    background-image: url(../img/trajes.jpg);   
+}
+
+.cajaAccesorios{  
+    background-image: url(../img/accesorios.jpg); 
+}
+
+.cajaTablas a, .cajaTrajes a, .cajaAccesorios a{
+    text-decoration: none;
+    color: white;  
+}
+
+.cajaTablas a h2, .cajaTrajes a h2, .cajaAccesorios a h2{
+    font-size: 2rem;
+    border-radius: 7px;
+    border: solid 3px;
+    padding: 2px 5px;
+    transition: 1s;
+   
+}
+
+.cajaTablas a h2:hover, .cajaTrajes a h2:hover, .cajaAccesorios a h2:hover{
+    color: yellow;
+    background-color:black;
+    border: solid yellow;
+    
+
+}
+/*FOOTER*/
+.footer{
+    display: flex;
+    background-color: black;
+    color: white; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.redes img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.footer h4{
+    padding-right: 10px;
+}
+
+@media (max-width: 768px){
+    .bodyPrincipal{
+       
+        grid-template-areas: 
+        "header"
+        "main"
+        "main" 
+        "footer" 
+        ;
+    }
+    
+    
+    
+    .slider img{
+       
+        height: 200px;
+        width: 200px;
+    }
+    .cajaTablas, .cajaTrajes, .cajaAccesorios{
+       
+        width: 300px;
+        height: 150px; 
+        
+        
+    }
+    .logo{
+        width: 200px;
+        height: 60px;
+        padding-right: 20px;
+        
+    }
+
+    .footer{
+      flex-direction: column;
+      
+     
+    }
+
+    .redes img{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    .footer h4{
+        padding-right: auto;
+    }
+ 
+}
+
+
+
+
+
+
+/**********************************************************************************
+Page Contacto
+***********************************************************************************/
+
+.bodyContacto{
+    background-color:#fafafa ;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.4rem;
+    display: grid;
+    
+    gap: 20px;
+    grid-template-areas: 
+    "header header"
+    "main   form" 
+    "footer footer" 
+    ;
+}
+
+.mainContacto{
+    padding-top: 50px;
+    justify-self: center;
+    grid-area: main;
+    height: 80vh;
+    
+    
+}
+.cajaForm{
+    padding-top: 50px;
+    
+    grid-area: form;
+    width: 80%;
+   
+    
+   
+}
+
+@media (max-width: 768px){
+    .bodyContacto{
+        grid-template-columns: 100%;
+        font-size:1.2rem;
+        grid-template-areas: 
+        "header"
+        "main"   
+        "form" 
+        "footer" 
+    ;
+    }
+
+    .cajaForm{
+        padding: 20px;
+        justify-self:auto;
+        grid-area: form; 
+        width: auto;
+    }
+    .mainContacto{
+        padding: 20px;
+        height:auto;
+    }
+    .mainContacto iframe{
+       width: 300px;
+       height: 250px;
+       
+    }
+}
+
+/*************************************************************************
+Page Tablas
+*************************************************************************/
+
+.bodyVentas{
+    font-size: 1.5rem; 
+    background-color:#fafafa ;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer" 
+    ;
+}
+
+.mainVentas{
+    grid-area: main;
+}
+
+
+.tituloVenta{
+    color:rgb(103, 2, 2);
+    text-align:center;
+    margin: 20px;
+}
+.menuVentas{
+    
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.menuVentas button{
+    margin: 10px;
+
+}
+
+.contenedorTablas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+
+    
+    
+}
+.contenedorTablas img{
+    width: 130px;
+    height: 250px;
+   
+}
+.articulo1, .articulo2, .articulo3,.articulo4, .articulo5, 
+.articulo6, .articulo7, .articulo8{
+    
+    width: 400px;
+    height: 400px;
+    text-align: center;
+   
+   
+    
+}
+.btnsiguiente{
+    text-align:center;
+    margin: 20px;
+    
+}
+.btnsiguiente button{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: larger;
+    background-color: yellow;
+    
+}
+
+/*
+Page Accesorios
+*/
+.contenedorAccesorios{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    
+}
+.contenedorAccesorios img{
+    width: 220px;
+    height: 250px;
+   
+}
+
