@@ -350,20 +350,5 @@ Page Tablas
     
 }
 
-/*
-Page Accesorios
-*/
-.contenedorAccesorios{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    
-    
-}
-.contenedorAccesorios img{
-    width: 220px;
-    height: 250px;
-   
-}
+
 
