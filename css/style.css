@@ -44,7 +44,7 @@ footer{
 }
 
 /****************************************************************
-HEADER
+HEADER PARA TODAS LAS PAGINAS
 *****************************************************************/
 .menu{
     background-color: black;
@@ -78,12 +78,8 @@ MAIN
     padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
-   
-  
-    
-    
-    
 }
+
 .cajaTablas, .cajaTrajes, .cajaAccesorios{
     display: flex;
     align-items: center;
@@ -129,7 +125,9 @@ MAIN
     
 
 }
-/*FOOTER*/
+/*************************************************************************************************
+FOOTER TODAS LAS PAGINAS
+*************************************************************************************************/
 .footer{
     display: flex;
     background-color: black;
@@ -148,8 +146,12 @@ MAIN
 }
 .footer h4{
     padding-right: 10px;
+    font-size: 1.5rem;
 }
 
+/***************************************************************************************************
+QUERIES PARA INDEX, HEADER Y FOOTER DE TODAS
+**************************************************************************************************/
 @media (max-width: 768px){
     .bodyPrincipal{
        
@@ -196,13 +198,10 @@ MAIN
 
     .footer h4{
         padding-right: auto;
+        font-size: 1rem;
     }
  
 }
-
-
-
-
 
 
 /**********************************************************************************
