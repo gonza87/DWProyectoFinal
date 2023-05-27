@@ -1,0 +1,38 @@
+/****************************************************************
+HEADER PARA TODAS LAS PAGINAS
+*****************************************************************/
+
+.header {
+
+    .menu {
+        background-color: black;
+        font-size: 1.5rem;
+
+        div {
+
+            a {
+
+                .logo {
+                    width: 300px;
+                    height: 80px;
+                }
+            }
+
+            .menuLista {
+
+                ul {
+
+                    li {
+
+                        a {
+
+                            &:hover {
+                                color: yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

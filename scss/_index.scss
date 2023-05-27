@@ -1,0 +1,28 @@
+/****************************************************************
+Page Index
+*****************************************************************/
+.bodyPrincipal {
+    font-size: 1.5rem;
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main   main   main"
+        "main   main   main"
+        "footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+.mainPrincipal {
+    grid-area: main;
+
+}
+
+footer {
+    grid-area: footer;
+}
