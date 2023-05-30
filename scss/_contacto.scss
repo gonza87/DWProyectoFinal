@@ -1,0 +1,32 @@
+/**********************************************************************************
+Page Contacto
+***********************************************************************************/
+
+.bodyContacto {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header header"
+        "main   form"
+        "footer footer"
+    ;
+}
+
+.mainContacto {
+    padding-top: 50px;
+    justify-self: center;
+    grid-area: main;
+    height: 80vh;
+
+
+}
+
+.cajaForm {
+    padding-top: 50px;
+    grid-area: form;
+    width: 80%;
+
+}

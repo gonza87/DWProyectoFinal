@@ -53,7 +53,7 @@ FOOTER TODAS LAS PAGINAS
 }
 
 /****************************************************************
-Page Index
+PAGE INDEX
 *****************************************************************/
 .bodyPrincipal {
   font-size: 1.5rem;
@@ -67,34 +67,25 @@ header {
   grid-area: header;
 }
 
-.mainPrincipal {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
 /****************************************************************
 MAIN
 *****************************************************************/
-.slider img {
+.mainPrincipal {
+  grid-area: main;
+}
+.mainPrincipal .slider div div div img {
   border: solid 2px rgb(209, 111, 14);
   height: 600px;
   object-fit: cover;
 }
-
-.sectionVentas {
+.mainPrincipal .sectionVentas {
   display: flex;
   gap: 40px;
   padding: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.cajaTablas,
-.cajaTrajes,
-.cajaAccesorios {
+.mainPrincipal .sectionVentas .cajaTablas, .mainPrincipal .sectionVentas .cajaAccesorios, .mainPrincipal .sectionVentas .cajaTrajes {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,28 +95,27 @@ MAIN
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
-}
-
-.cajaTablas {
   background-image: url(../img/tablas.jpg);
 }
-
-.cajaTrajes {
+.mainPrincipal .sectionVentas .cajaTrajes {
   background-image: url(../img/trajes.jpg);
 }
-
-.cajaAccesorios {
+.mainPrincipal .sectionVentas .cajaAccesorios {
   background-image: url(../img/accesorios.jpg);
 }
 
-.cajaTablas a,
+footer {
+  grid-area: footer;
+}
+
+.cajaTablas a, .mainPrincipal .sectionVentas .cajaTrajes a, .mainPrincipal .sectionVentas .cajaAccesorios a,
 .cajaTrajes a,
 .cajaAccesorios a {
   text-decoration: none;
   color: white;
 }
 
-.cajaTablas a h2,
+.cajaTablas a h2, .mainPrincipal .sectionVentas .cajaTrajes a h2, .mainPrincipal .sectionVentas .cajaAccesorios a h2,
 .cajaTrajes a h2,
 .cajaAccesorios a h2 {
   font-size: 2rem;
@@ -135,7 +125,7 @@ MAIN
   transition: 1s;
 }
 
-.cajaTablas a h2:hover,
+.cajaTablas a h2:hover, .mainPrincipal .sectionVentas .cajaTrajes a h2:hover, .mainPrincipal .sectionVentas .cajaAccesorios a h2:hover,
 .cajaTrajes a h2:hover,
 .cajaAccesorios a h2:hover {
   color: yellow;
@@ -143,41 +133,6 @@ MAIN
   border: solid yellow;
 }
 
-/***************************************************************************************************
-QUERIES PARA INDEX, HEADER Y FOOTER DE TODAS
-**************************************************************************************************/
-@media (max-width: 768px) {
-  .bodyPrincipal {
-    grid-template-areas: "header" "main" "main" "footer";
-  }
-  .slider img {
-    height: 200px;
-    width: 200px;
-  }
-  .cajaTablas,
-  .cajaTrajes,
-  .cajaAccesorios {
-    width: 300px;
-    height: 150px;
-  }
-  .logo {
-    width: 200px;
-    height: 60px;
-    padding-right: 20px;
-  }
-  .footer {
-    flex-direction: column;
-  }
-  .redes img {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-  }
-  .footer h4 {
-    padding-right: auto;
-    font-size: 1rem;
-  }
-}
 /**********************************************************************************
 Page Contacto
 ***********************************************************************************/
@@ -203,6 +158,42 @@ Page Contacto
   width: 80%;
 }
 
+/***************************************************************************************************
+QUERIES PARA INDEX, HEADER Y FOOTER DE TODAS
+**************************************************************************************************/
+@media (max-width: 768px) {
+  .bodyPrincipal {
+    grid-template-areas: "header" "main" "main" "footer";
+  }
+  .mainPrincipal .slider div div div img {
+    height: 200px;
+    width: 200px;
+  }
+  .mainPrincipal .sectionVentas .cajaTablas, .mainPrincipal .sectionVentas .cajaTrajes, .mainPrincipal .sectionVentas .cajaAccesorios {
+    width: 300px;
+    height: 150px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer div a .logo {
+    width: 200px;
+    height: 60px;
+    padding-right: 20px;
+  }
+  .footer .nav .redes a img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  .footer h4 {
+    padding-right: auto;
+    font-size: 1rem;
+  }
+}
+/***************************************************************************************************
+QUERIES PAGE CONTACTO
+**************************************************************************************************/
 @media (max-width: 768px) {
   .bodyContacto {
     grid-template-columns: 100%;
