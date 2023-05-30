@@ -97,6 +97,22 @@ MAIN
   box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
   background-image: url(../img/tablas.jpg);
 }
+.mainPrincipal .sectionVentas .cajaTablas a, .mainPrincipal .sectionVentas .cajaAccesorios a, .mainPrincipal .sectionVentas .cajaTrajes a {
+  text-decoration: none;
+  color: white;
+}
+.mainPrincipal .sectionVentas .cajaTablas a h2, .mainPrincipal .sectionVentas .cajaAccesorios a h2, .mainPrincipal .sectionVentas .cajaTrajes a h2 {
+  font-size: 2rem;
+  border-radius: 7px;
+  border: solid 3px;
+  padding: 2px 5px;
+  transition: 1s;
+}
+.mainPrincipal .sectionVentas .cajaTablas a h2:hover, .mainPrincipal .sectionVentas .cajaAccesorios a h2:hover, .mainPrincipal .sectionVentas .cajaTrajes a h2:hover {
+  color: yellow;
+  background-color: black;
+  border: solid yellow;
+}
 .mainPrincipal .sectionVentas .cajaTrajes {
   background-image: url(../img/trajes.jpg);
 }
@@ -106,31 +122,6 @@ MAIN
 
 footer {
   grid-area: footer;
-}
-
-.cajaTablas a, .mainPrincipal .sectionVentas .cajaTrajes a, .mainPrincipal .sectionVentas .cajaAccesorios a,
-.cajaTrajes a,
-.cajaAccesorios a {
-  text-decoration: none;
-  color: white;
-}
-
-.cajaTablas a h2, .mainPrincipal .sectionVentas .cajaTrajes a h2, .mainPrincipal .sectionVentas .cajaAccesorios a h2,
-.cajaTrajes a h2,
-.cajaAccesorios a h2 {
-  font-size: 2rem;
-  border-radius: 7px;
-  border: solid 3px;
-  padding: 2px 5px;
-  transition: 1s;
-}
-
-.cajaTablas a h2:hover, .mainPrincipal .sectionVentas .cajaTrajes a h2:hover, .mainPrincipal .sectionVentas .cajaAccesorios a h2:hover,
-.cajaTrajes a h2:hover,
-.cajaAccesorios a h2:hover {
-  color: yellow;
-  background-color: black;
-  border: solid yellow;
 }
 
 /**********************************************************************************

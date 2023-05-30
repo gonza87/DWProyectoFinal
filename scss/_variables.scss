@@ -1,0 +1,9 @@
+$fontRoboto: 'Roboto', sans-serif;
+
+@mixin titulo-caja-h2 {
+    font-size: 2rem;
+    border-radius: 7px;
+    border: solid 3px;
+    padding: 2px 5px;
+    transition: 1s;
+}
