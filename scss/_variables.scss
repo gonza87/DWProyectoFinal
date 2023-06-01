@@ -1,9 +1,10 @@
 $fontRoboto: 'Roboto', sans-serif;
 
+/*mixin para cajas de seccion de ventas*/
 @mixin titulo-caja-h2 {
     font-size: 2rem;
     border-radius: 7px;
     border: solid 3px;
     padding: 2px 5px;
-    transition: 1s;
+    transition: background-color 1s, color 2s, border 2s, font-size 2s;
 }

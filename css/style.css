@@ -1,3 +1,4 @@
+/*mixin para cajas de seccion de ventas*/
 /****************************************************************
 Reset CSS
 *****************************************************************/
@@ -106,9 +107,10 @@ MAIN
   border-radius: 7px;
   border: solid 3px;
   padding: 2px 5px;
-  transition: 1s;
+  transition: background-color 1s, color 2s, border 2s, font-size 2s;
 }
 .mainPrincipal .sectionVentas .cajaTablas a h2:hover, .mainPrincipal .sectionVentas .cajaAccesorios a h2:hover, .mainPrincipal .sectionVentas .cajaTrajes a h2:hover {
+  font-size: 2.5rem;
   color: yellow;
   background-color: black;
   border: solid yellow;
